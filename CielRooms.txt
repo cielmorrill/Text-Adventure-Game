@@ -1,0 +1,457 @@
+StartRoom
+Start Room
+You find yourself in a dimly lit room.
+NORTH is a door covered in vines.
+EAST is a door wrought of iron.
+SOUTH is a door that seems to sparkle.
+WEST is a door that is warm to the touch.
+-----
+NORTH: VineRoom1/BOLT_CUTTERS
+NORTH: SkyKeyMissing
+EAST: IronRoom1/WARPEDKEY
+EAST: BlueKeyMissing
+SOUTH: StarRoom1/KEY_PLANT
+SOUTH: OrangeKeyMissing
+WEST: LavaRoom1
+
+SkyKeyMissing
+-
+There is too much vegetation... You can't seem to get through.
+-----
+FORCED: StartRoom
+
+BlueKeyMissing
+-
+Upon closer inspection, the door has a slot for a key. It doesn't budge.
+-----
+FORCED: StartRoom
+
+OrangeKeyMissing
+-
+There is no handle. Pushing yields no discernible result.
+-----
+FORCED: StartRoom
+
+LavaRoom1
+Lava Cave Entrance
+The room is warmer than you anticipated.
+Crimped rock surrounds you from floor to ceiling.
+EAST is the starting room.
+WEST is a sloping tunnel.
+-----
+EAST: StartRoom
+WEST: LavaRoom2
+
+LavaRoom2
+Lava Cave tunnel
+It's hard to see. The best you can do is feel your way forward.
+It's cramped.
+-----
+NORTH: BlueKeyRoom
+WEST: LavaRoom3
+EAST: LavaRoom1
+
+BlueKeyRoom
+Torch Room
+This room is lit by torches embedded on nearly every surface.
+You decide should you ever meet the interior decorator, 
+you'll inform them it's overkill.
+SOUTH is a tight crevice in the wall.
+You wonder how you managed to fit through in the first place.
+-----
+SOUTH: LavaRoom2
+
+LavaRoom3
+Lava Cave Tunnel (Continued)
+You feel claustrophobic. 
+Is now a bad time to feel claustrophobic?
+-----
+EAST: LavaRoom2
+SOUTH: LavaRoom4
+
+LavaRoom4
+Lava Cave Main Chamber
+It's uncomfortably hot. 
+You're not sure whether it's courtesy of the torches
+or something else. At the very least, you have room to breathe.
+NORTH is the tunnel.
+SOUTH is another chamber.
+WEST is a door with a massive padlock.
+-----
+NORTH: LavaRoom3
+SOUTH: LavaRoom5
+WEST: LavaGrotto/PADLOCK_KEY
+WEST: YellowKeyMissing
+
+YellowKeyMissing
+-
+Shockingly, attempting to open a padlocked door is unsuccessful.
+-----
+FORCED: LavaRoom4
+
+LavaRoom5
+Lava Cave Chamber 2
+Either you're losing your mind, or something is making noises.
+You make a mental note to enjoy cold weather.
+NORTH is the main chamber.
+EAST is a ladder.
+-----
+NORTH: LavaRoom4
+EAST: AbandonedMineshaft
+
+AbandonedMineshaft
+Abandoned Mineshaft
+This place looks like it could collapse at any second.
+For your own safety, you refuse to progress.
+-----
+WEST: LavaRoom5
+
+LavaGrotto
+Lava Cave Grotto
+The air seems more fresh. There is a table and chairs.
+It is very quiet.
+-----
+EAST: LavaRoom4
+
+IronRoom1
+Waiting Room
+There is a faded rug on the ground. This place may have looked nice, once.
+Now everything is covered in dust.
+There are stairs leading to a second story - but they're almost completely destroyed.
+SOUTH is a hallway.
+WEST is the main room.
+-----
+WEST: StartRoom
+SOUTH: IronRoom2
+
+IronRoom2
+Dead End Hallway
+There are pictures lining both sides of the hall.
+It leads to a dead end.
+-----
+NORTH: IronRoom1
+EAST: BehindPicture
+
+BehindPicture
+Hidden Hallway
+Behind a picture frame was... another hall?
+It leads NORTH.
+WEST is a strange hole (and the back of a frame).
+-----
+NORTH: IronRoom3
+WEST: IronRoom2
+
+IronRoom3
+End of Hall
+There are two rooms.
+NORTH is a scratched, battered door. The marks are deep.
+EAST looks the same - minus the damage.
+-----
+NORTH: JewelRoom
+EAST: KitchenRoom
+SOUTH: BehindPicture
+
+KitchenRoom
+Kitchen
+Countertops, drawers, and dust.
+There are no windows. It feels cold - lifeless.
+The only way is back WEST.
+-----
+WEST: IronRoom3
+
+JewelRoom
+Ruined Entertainment Room
+Glass shards, everywhere. The carpet is torn to shreds.
+No windows. Just overhead lights and splintered wood.
+-----
+SOUTH: IronRoom3
+
+VineRoom1
+Overgrown Room
+Moss and rock overlap. It's slightly humid.
+And also difficult to discern a path forward.
+NORTH?
+-----
+NORTH: VineRoom2
+
+VineRoom2
+Maze Entrance
+There's too many plants. You steel yourself
+for whatever adventure lies ahead.
+-----
+NORTH: PottedPlantRoom
+EAST: MazeRoom2
+
+PottedPlantRoom
+Potted Plant Room
+Plants. Everywhere. Some are in pots, some in jars,
+some are just growing out of the floor.
+At least you can see the only way to go is SOUTH.
+-----
+SOUTH: VineRoom2
+
+MazeRoom2
+Maze
+Here we go.
+-----
+EAST: VineRoom2
+NORTH: MazeRoom3
+WEST: MapRoom
+
+MapRoom
+Maze
+There's something scribbled in the dirt.
+.....
+SLUU RR DRU  ULU
+-----
+EAST: MazeRoom2
+
+MazeRoom3
+Maze
+It's a maze. Forward?
+-----
+NORTH: MazeRoom4
+
+MazeRoom4
+Maze
+Wait, you can see again! All is not lost.
+EAST: Maze
+SOUTH: Also maze
+-----
+EAST: MazeRoom5
+SOUTH: MazeRoom4
+
+MazeRoom5
+Maze
+This is a-maze-ing.
+EAST: Maze
+WEST: Maze
+-----
+EAST: MazeRoom6
+WEST: MazeRoom4
+
+MazeRoom6
+Maze
+Easy.
+SOUTH: Maze
+WEST: Maze
+-----
+SOUTH: MazeRoom7
+WEST: MazeRoom5
+
+MazeRoom7
+Maze
+...It's getting foggy.
+NORTH: Maze
+-----
+NORTH: MazeRoom6
+WEST: FoggyWall
+EAST: MazeRoom8
+
+FoggyWall
+-
+Aha!
+...
+That's a wall.
+-----
+FORCED: MazeRoom7
+
+MazeRoom8
+Maze
+...
+-----
+NORTH: MazeRoom9
+SOUTH: MazeRoom10
+WEST: MazeRoom7
+
+MazeRoom10
+Maze
+...
+-----
+NORTH: MazeRoom8
+SOUTH: NiceTry
+WEST: DeadEnd1
+
+NiceTry
+-
+That's a wall.
+-----
+FORCED: MazeRoom10
+
+DeadEnd1
+Dead End
+It's a dead end.
+-----
+EAST: MazeRoom10
+
+MazeRoom9
+Maze
+...
+-----
+NORTH: MazeRoom11
+EAST: MazeRoom12
+SOUTH: MazeRoom8
+
+MazeRoom12
+Maze
+...
+-----
+EAST: CircleRoom/POTTED_PLANT
+EAST: NoPlant
+WEST: MazeRoom9
+
+NoPlant
+-
+Wait, this is a wall. Is that a circle on the ground?
+-----
+FORCED: MazeRoom12
+
+CircleRoom
+Circle Room
+There are gems in every direction.
+Embedded in wood, stone, crystal...
+You can only go WEST.
+-----
+WEST: MazeRoom12
+
+MazeRoom11
+Maze
+Mercy.
+-----
+NORTH: NoMercy
+SOUTH: MazeRoom9
+WEST: MazeRoom13
+
+NoMercy
+-
+No mercy.
+-----
+FORCED: MazeRoom11
+
+MazeRoom13
+Maze
+...
+-----
+NORTH: SpaceKeyRoom
+EAST: MazeRoom11
+WEST: MazeRoom14
+
+SpaceKeyRoom
+Weird Plant Room
+The plants here are... strange.
+Are they supposed to be that color?
+The only doorway is SOUTH.
+-----
+SOUTH: MazeRoom13
+
+MazeRoom14
+Maze
+Any day now.
+-----
+EAST: MazeRoom13
+WEST: MazeRoom15
+
+MazeRoom15
+Maze
+...
+-----
+NORTH: DeadEnd2
+EAST: MazeRoom14
+SOUTH: DeadEnd3
+WEST: DeadEnd4
+
+DeadEnd2
+-
+Dead end.
+-----
+FORCED: MazeRoom15
+
+DeadEnd3
+-
+This is... a dead end.
+-----
+FORCED: MazeRoom15
+
+DeadEnd4
+-
+Finally! At long last!
+...
+No, it's a dead end.
+-----
+FORCED: MazeRoom15
+
+StarRoom1
+Starry Room
+The plant melds into the door. 
+Somehow, it's sturdy enough to use as a handle.
+However, you're faced with a solid wall to the SOUTH.
+-----
+NORTH: StartRoom
+SOUTH: Freedom/GLITTERING_CRYSTAL
+SOUTH: ThatsaWall
+
+ThatsaWall
+-
+That's. That's a solid wall.
+-----
+FORCED: StarRoom1
+
+Freedom
+Freedom
+The GLITTERING_CRYSTAL reacts with the wall.
+Stars surround you in curtains.
+Somehow, you know you're going home.
+...
+...
+...
+Thank you for playing. :)
+-----
+SECRET: SecretRoom
+
+SecretRoom
+Secret Room
+I've been discovered!
+-----
+FREEDOM: Freedom
+
+TestRoom
+Test Room
+This is a test room for Ciel adventure.
+NORTH is an item room.
+SOUTH is a locked room.
+-----
+NORTH: ItemTestRoom
+SOUTH: TestLockedRoom
+
+ItemTestRoom
+Item Test Room
+Items here.
+-----
+SOUTH: TestRoom
+
+TestLockedRoom
+Locked Test Room
+This room is locked to the south 
+unless player is in possession of KEY.
+-----
+NORTH: TestRoom
+SOUTH: TestUnlockedRoom/TESTKEYS
+SOUTH: TestKeyMissing
+
+TestKeyMissing
+-
+A key is needed to progress.
+-----
+FORCED: LockedTestRoom
+
+TestUnlockedRoom
+Unlocked Test Room
+This room was unlocked with test keys.
+-----
+SOUTH: TestLockedRoom
+
+DEAD
+dead room
+this is where dead things go.
+-----
+ESCAPE: NONE

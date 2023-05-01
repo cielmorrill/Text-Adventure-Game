@@ -1,0 +1,175 @@
+WARPEDKEY
+a WARPEDKEY, dented and well-used
+BlueKeyRoom
+extra_not_consumable
+True
+item
+1
+
+DRAGONS_TEETH
+the teeth of a DRAGON
+001
+feed_dmg
+True
+weapon
+-20
+
+TORCH
+a TORCH...?
+BlueKeyRoom
+not_consumable
+True
+weapon
+-15
+
+HEAVY_DUTY_GLOVES
+a pair of HEAVY_DUTY_GLOVES
+LavaGrotto
+extra_not_consumable
+True
+item
+-1
+
+OLD_SNACK
+an OLD_SNACK
+LavaGrotto
+feed
+True
+consumable
+25
+
+PADLOCK_KEY
+a PADLOCK_KEY
+002
+extra_not_consumable
+True
+item
+-1
+
+GLITTERING_CRYSTAL
+a GLITTERING_CRYSTAL that changes color with every glance
+001
+extra_not_consumable
+True
+item
+-1
+
+BOLT_CUTTERS
+a pair of BOLT_CUTTERS
+KitchenRoom
+extra_not_consumable
+True
+item
+-15
+
+GRANOLA_BAR
+a GRANOLA_BAR
+KitchenRoom
+feed_heal
+True
+consumable
+20
+
+POTTED_PLANT
+a POTTED_PLANT
+PottedPlantRoom
+extra_not_consumable
+True
+item
+-10
+
+CRUNCHY_LEAF
+a tasty-looking CRUNCHY_LEAF
+MazeRoom10
+full_heal_full
+True
+consumable
+50
+
+PLANT_SWORD
+a green and mean PLANT_SWORD
+003
+not_consumable
+True
+weapon
+-25
+
+SHIFTING_CRYSTAL
+a strange, but pretty, SHIFTING_CRYSTAL
+CircleRoom
+extra_not_consumable
+False
+item
+-5
+
+KEY_PLANT
+a purple KEY_PLANT..?
+SpaceKeyRoom
+extra_not_consumable
+True
+item
+1
+
+TESTKEYS
+a set of test keys
+ItemTestRoom
+extra_not_consumable
+True
+item
+0
+
+TESTWEAPON
+test weapon
+ItemTestRoom
+not_consumable
+True
+weapon
+-50
+
+TESTBREAD
+test bread
+ItemTestRoom
+feed
+True
+consumable
+5
+
+TESTPOTION
+test potion
+ItemTestRoom
+heal
+True
+consumable
+20
+
+TESTBOTTLEFULL
+test filled bottle
+ItemTestRoom
+full_heal
+True
+consumable
+20
+
+TESTBOTTLE
+test empty bottle
+NoRoom
+not_consumable
+True
+item
+-2
+
+TEST_CITEM1
+test creature item
+000
+not_consumable
+True
+item
+-2
+
+TEST_CITEM2
+test creature item
+000
+not_consumable
+True
+item
+-2
